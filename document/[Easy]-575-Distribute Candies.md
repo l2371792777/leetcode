@@ -33,7 +33,30 @@ Easy
 
 ### 题解:  
 * 思路  
-
+确定糖果种数account,总数n  
+若account<=n/2，返回account  
+若account>n，返回n
 * 代码  
 ```  
+	int distributeCandies(vector<int> &candyType)
+    {
+        set<int> candy;
+        for (int i : candyType)
+        {
+            if (candy.find(i) == candy.end())
+            {
+                candy.insert(i);
+            }
+        }
+        int account = candy.size();
+        int nums = candyType.size();
+        if (account > nums / 2)
+        {
+            return nums / 2;
+        }
+        else
+        {
+            return account;
+        }
+    }
 ```
