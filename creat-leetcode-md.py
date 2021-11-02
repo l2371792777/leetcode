@@ -31,7 +31,7 @@ def get_problem_content(slug):
     #markdown文档路径
     fileName=pre_dir+"["+question["difficulty"]+"]-"+question["questionId"]+"-"+question["title"]+".md"
     fh = open(fileName, 'w', encoding='utf-8')
-    fh.writelines("# "+question['questionId']+"."+question["translatedTitle"]+"\n")
+    fh.writelines("## "+question['questionId']+"."+question["translatedTitle"]+"\n")
     fh.writelines(question['difficulty']+"  \n")
     fh.writelines(convert(question['translatedContent']))
     #题解
@@ -50,7 +50,7 @@ Replace = [
     ["</?code>", "``"],
     ["</?strong>", ""],
     ["<pre>", "```\n"],
-    ["</pre>", "```"],
+    ["</pre>", "\n```"],
     ["&nbsp;", " "],
     ["&quot;", '"']
 ]

@@ -14,9 +14,7 @@ public:
     {
         
     }
-    int distributeCandies(vector<int>& candyType) {
 
-    }
 };
 
 int main()

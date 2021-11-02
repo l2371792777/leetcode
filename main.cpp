@@ -1,41 +1,35 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <set>
 #include <limits.h>
 #include <string>
 #include <cmath>
 
 using namespace std;
 
+struct ListNode
+{
+    int val;
+    ListNode *next;
+    ListNode(int x) : val(x), next(NULL) {}
+};
+
 class Solution
 {
 public:
     void test()
     {
-        vector<int> test = {2, 1, 1, 3};
-        cout << distributeCandies(test);
     }
-    int distributeCandies(vector<int> &candyType)
+    void deleteNode(ListNode *node)
     {
-        set<int> candy;
-        for (int i : candyType)
+        ListNode *pre = node;
+        while (node->next != NULL)
         {
-            if (candy.find(i) == candy.end())
-            {
-                candy.insert(i);
-            }
+            node->val = node->next->val;
+            pre = node;
+            node = node->next;
         }
-        int account = candy.size();
-        int nums = candyType.size();
-        if (account > nums / 2)
-        {
-            return nums / 2;
-        }
-        else
-        {
-            return account;
-        }
+        pre->next = NULL;
     }
 };
 
