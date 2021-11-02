@@ -9,7 +9,7 @@
 using namespace std;
 
 void test();
-class Solution
+class MinStack
 {
 public:
     vector<int> constructRectangle(int area)
@@ -35,7 +35,7 @@ public:
 
 int main()
 {
-    Solution solu;
+    MinStack solu;
     solu.test();
     return 0;
 }

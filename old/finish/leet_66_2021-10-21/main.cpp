@@ -8,7 +8,7 @@
 using namespace std;
 
 void test();
-class Solution
+class MinStack
 {
 public:
     vector<int> plusOne(vector<int> &digits)
@@ -53,7 +53,7 @@ int main()
 
 void test()
 {
-    Solution test;
+    MinStack test;
     vector<int> digits = {7899};
     digits = test.plusOne(digits);
     for (int i : digits)

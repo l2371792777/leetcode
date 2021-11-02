@@ -1,7 +1,7 @@
 #!/bin/bash
 
-readonly title=delete-node-in-a-linked-list
-readonly questionId=237
+readonly title=bao-han-minhan-shu-de-zhan-lcof
+readonly questionId=10086
 
 readonly pre_dir="document/"
 readonly sou_dir="document/*${questionId}*"

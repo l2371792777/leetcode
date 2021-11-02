@@ -8,7 +8,7 @@
 using namespace std;
 
 void test();
-class Solution
+class MinStack
 {
 public:
     int minMoves(vector<int> &nums);
@@ -23,11 +23,11 @@ int main()
 void test()
 {
     vector<int> nums = {1, 2, 3};
-    Solution test;
+    MinStack test;
     cout << test.minMoves(nums);
 }
 
-int Solution::minMoves(vector<int> &nums)
+int MinStack::minMoves(vector<int> &nums)
 {
     long res = 0;
     int min = INT_MAX;

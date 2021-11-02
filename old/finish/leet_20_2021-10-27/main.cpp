@@ -10,7 +10,7 @@
 
 using namespace std;
 
-class Solution
+class MinStack
 {
 public:
     void test()
@@ -38,7 +38,7 @@ public:
 
 int main()
 {
-    Solution solu;
+    MinStack solu;
     solu.test();
     return 0;
 }

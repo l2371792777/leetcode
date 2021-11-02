@@ -11,7 +11,7 @@
 
 using namespace std;
 
-class Solution
+class MinStack
 {
     vector<string> res;
 
@@ -59,7 +59,7 @@ public:
 
 int main()
 {
-    Solution solu;
+    MinStack solu;
     solu.test();
     return 0;
 }

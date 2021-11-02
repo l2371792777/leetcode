@@ -11,13 +11,13 @@
 
 using namespace std;
 
-class Solution
+class MinStack
 {
     set<vector<int>> hogo;
     vector<vector<int>> res;
 
 public:
-    Solution()
+    MinStack()
     {
     }
     void test()
@@ -63,7 +63,7 @@ public:
 
 int main()
 {
-    Solution solu;
+    MinStack solu;
     solu.test();
     return 0;
 }

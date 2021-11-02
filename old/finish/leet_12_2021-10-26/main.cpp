@@ -10,12 +10,12 @@
 
 using namespace std;
 
-class Solution
+class MinStack
 {
     map<int, string> hogo;
 
 public:
-    Solution()
+    MinStack()
     {
         hogo[1] = 'I';
         hogo[4] = "IV";
@@ -54,7 +54,7 @@ public:
 
 int main()
 {
-    Solution solu;
+    MinStack solu;
     solu.test();
     return 0;
 }

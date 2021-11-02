@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "*.ejs": "html",
+        "tuple": "cpp",
+        "*.tcc": "cpp",
+        "bitset": "cpp",
+        "chrono": "cpp",
+        "string_view": "cpp",
+        "algorithm": "cpp",
+        "random": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "numeric": "cpp",
+        "valarray": "cpp"
+    }
+}

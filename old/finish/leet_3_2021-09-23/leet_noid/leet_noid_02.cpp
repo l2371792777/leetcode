@@ -10,14 +10,14 @@ struct ListNode
     ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
-class Solution
+class MinStack
 {
 public:
     ListNode *reverseBetween(ListNode *head, int left, int right);
     int test();
 };
 
-ListNode *Solution::reverseBetween(ListNode *head, int left, int right)
+ListNode *MinStack::reverseBetween(ListNode *head, int left, int right)
 {
     if (head == NULL || right - left < 1)
     {
@@ -55,10 +55,10 @@ ListNode *Solution::reverseBetween(ListNode *head, int left, int right)
     return head;
 }
 
-int Solution::test()
+int MinStack::test()
 {
     ListNode hogo(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, NULL)))));
-    Solution init;
+    MinStack init;
     ListNode *ptr = &hogo;
     ListNode *cptr = ptr;
     while (cptr != NULL)

@@ -4,38 +4,56 @@
 #include <limits.h>
 #include <string>
 #include <cmath>
+#include <stack>
 
 using namespace std;
 
-struct ListNode
+class MinStack
 {
-    int val;
-    ListNode *next;
-    ListNode(int x) : val(x), next(NULL) {}
-};
+    stack<int> res;
+    stack<int> minlist;
 
-class Solution
-{
 public:
-    void test()
+    /** initialize your data structure here. */
+    MinStack()
     {
     }
-    void deleteNode(ListNode *node)
+
+    void push(int x)
     {
-        ListNode *pre = node;
-        while (node->next != NULL)
+        res.push(x);
+        if (minlist.empty())
         {
-            node->val = node->next->val;
-            pre = node;
-            node = node->next;
+            minlist.push(x);
         }
-        pre->next = NULL;
+        else if (x <= minlist.top())
+        {
+            minlist.push(x);
+        }
+    }
+
+    void pop()
+    {
+        if (res.top() == minlist.top())
+        {
+            minlist.pop();
+        }
+        res.pop();
+    }
+
+    int top()
+    {
+        return res.top();
+    }
+
+    int min()
+    {
+        return minlist.top();
     }
 };
 
 int main()
 {
-    Solution solu;
-    solu.test();
+    MinStack solu;
     return 0;
 }
