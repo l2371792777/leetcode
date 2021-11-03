@@ -7,7 +7,14 @@
 
 using namespace std;
 
-class MinStack
+struct ListNode
+{
+    int val;
+    ListNode *next;
+    ListNode(int x) : val(x), next(NULL) {}
+};
+
+class Solution
 {
 public:
     void test()
@@ -19,7 +26,7 @@ public:
 
 int main()
 {
-    MinStack solu;
+    Solution solu;
     solu.test();
     return 0;
 }

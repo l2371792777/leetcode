@@ -1,6 +1,6 @@
 #!/bin/bash
 
-readonly title=bao-han-minhan-shu-de-zhan-lcof
+readonly title=fu-za-lian-biao-de-fu-zhi-lcof
 readonly questionId=10086
 
 readonly pre_dir="document/"
@@ -19,7 +19,7 @@ if [ -e document/*${questionId}* ]; then
 fi
 
 #logs
-echo -e "$(date)\nquestionId:$questionId\ntitle:$title" >>logs/create-logs.txt
+echo -e "***$(date)\nquestionId:$questionId\ntitle:$title" >>logs/create-logs.txt
 #markdown
 python creat-leetcode-md.py $title $pre_dir
 cp old/main.cpp main.cpp
