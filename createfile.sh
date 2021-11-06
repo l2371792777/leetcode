@@ -1,25 +1,28 @@
 #!/bin/bash
 
-readonly title=fu-za-lian-biao-de-fu-zhi-lcof
+readonly title=que-shi-de-shu-zi-lcof
 readonly questionId=10086
 
-readonly pre_dir="document/"
+readonly pre_dir="document/starting/"
 readonly sou_dir="document/*${questionId}*"
-readonly tar_dir="/home/ayanami/source/hexo/source/_posts/code/leetcode/code.md"
 
-if [ $# != 0 ]; then
-    echo >>${tar_dir}
-    cat ${sou_dir} >>${tar_dir}
-    exit
-fi
-
-if [ -e document/*${questionId}* ]; then
+if [[ -e document/starting/*${questionId}* ]] || [[ -e document/finish/*${questionId}* ]]; then
     echo "file exist"
     exit
 fi
 
 #logs
-echo -e "***$(date)\nquestionId:$questionId\ntitle:$title" >>logs/create-logs.txt
+logline=$(cat logs/out.txt | wc -l)
+#大于300行新建logs文件
+if [ $logline -gt 300 ]; then
+    cd logs/
+    outnums=$(ls -l | grep "out*" | wc -l)
+    mv out.txt out-${outnums}.txt
+    echo -e "***$(date)\nnew log" >out.txt
+    cd -
+fi
+
 #markdown
-python creat-leetcode-md.py $title $pre_dir
+questionIdid=`python creat-leetcode-md.py $title $pre_dir`
+echo -e "***$(date)\nquestionId:$questionIdid\ntitle:$title" >>logs/out.txt
 cp old/main.cpp main.cpp

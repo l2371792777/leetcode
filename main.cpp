@@ -2,13 +2,12 @@
 #include <vector>
 #include <algorithm>
 #include <limits.h>
-#include <map>
 #include <string>
+#include <map>
 #include <cmath>
 
 using namespace std;
 
-//   Definition for singly-linked list.
 struct ListNode
 {
     int val;
@@ -16,70 +15,32 @@ struct ListNode
     ListNode(int x) : val(x), next(NULL) {}
 };
 
-class Node
-{
-public:
-    int val;
-    Node *next;
-    Node *random;
-
-    Node(int _val)
-    {
-        val = _val;
-        next = NULL;
-        random = NULL;
-    }
-};
 class Solution
 {
 public:
-    Node *copyRandomList(Node *head)
+    void test()
     {
-        if (head == NULL)
+        vector<int> test = {5, 7, 7, 8, 8, 10};
+        cout << missingNumber(test);
+    }
+    int missingNumber(vector<int>& nums) {
+        int n = nums.size();
+        int sum = 0;
+        for (int i = 0; i <= n; i++)
         {
-            return head;
+            sum += i;
         }
-        vector<Node *> hogo;
-        vector<Node *> Nhogo;
-
-        Node *root = head;
-        while (root != NULL)
+        for (int i : nums)
         {
-            hogo.push_back(root);
-            root = root->next;
+            sum -= i;
         }
-        root = head;
-        int num = 0;
-        while (root != NULL)
-        {
-            Nhogo.push_back(new Node(root->val));
-            if (num != 0)
-            {
-                Nhogo[num - 1]->next = Nhogo[num];
-            }
-            root = root->next;
-            num++;
-        }
-
-        root = Nhogo[0];
-        while (head != NULL)
-        {
-            if (head->random != NULL)
-            {
-                auto it = find(hogo.begin(), hogo.end(), head->random);
-                num = it - hogo.begin();
-                root->random = Nhogo[num];
-            }
-            head = head->next;
-            root = root->next;
-        }
-        root = Nhogo[0];
-        return root;
+        return sum;
     }
 };
+
 int main()
 {
     Solution solu;
-    // solu.test();
+    solu.test();
     return 0;
 }

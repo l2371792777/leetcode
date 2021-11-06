@@ -170,3 +170,45 @@ title:fan-zhuan-lian-biao-lcof
 Wed Nov  3 06:23:06 PM CST 2021
 questionId:10086
 title:fu-za-lian-biao-de-fu-zhi-lcof
+***Thu Nov  4 02:00:12 PM CST 2021
+questionId:367
+title:valid-perfect-square
+***Thu Nov  4 02:00:57 PM CST 2021
+questionId:367
+title:valid-perfect-square
+***Thu Nov  4 02:09:53 PM CST 2021
+questionId:10086
+title:ti-huan-kong-ge-lcof
+***Thu Nov  4 02:11:18 PM CST 2021
+questionId:10086
+title:zuo-xuan-zhuan-zi-fu-chuan-lcof
+***Thu Nov  4 02:17:44 PM CST 2021
+questionId:
+title:zuo-xuan-zhuan-zi-fu-chuan-lcof
+***Thu Nov  4 02:17:57 PM CST 2021
+questionId:100330
+title:zuo-xuan-zhuan-zi-fu-chuan-lcof
+***Sat Nov  6 10:33:54 AM CST 2021
+questionId:
+title:longest-arithmetic-subsequence-of-given-difference
+***Sat Nov  6 10:34:15 AM CST 2021
+questionId:1330
+title:longest-arithmetic-subsequence-of-given-difference
+***Sat Nov  6 10:35:12 AM CST 2021
+questionId:268
+title:missing-number
+***Sat Nov  6 10:36:30 AM CST 2021
+questionId:100275
+title:shu-zu-zhong-zhong-fu-de-shu-zi-lcof
+***Sat Nov  6 10:37:10 AM CST 2021
+questionId:100329
+title:zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof
+***Sat Nov  6 10:37:57 AM CST 2021
+questionId:
+title:que-shi-de-shu-zi-lcof
+***Sat Nov  6 10:38:10 AM CST 2021
+questionId:
+title:que-shi-de-shu-zi-lcof
+***Sat Nov  6 10:38:25 AM CST 2021
+questionId:100331
+title:que-shi-de-shu-zi-lcof

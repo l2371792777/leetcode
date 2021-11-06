@@ -25,17 +25,18 @@ def get_problem_content(slug):
     resp.encoding = 'utf8'
     content = resp.json()
 
-    # 题目详细信息
     # print(content)
     question = content['data']['question']
+    print(question["questionId"])
     #markdown文档路径
     fileName=pre_dir+"["+question["difficulty"]+"]-"+question["questionId"]+"-"+question["title"]+".md"
     fh = open(fileName, 'w', encoding='utf-8')
+    # 题目详细信息
     fh.writelines("## "+question['questionId']+"."+question["translatedTitle"]+"\n")
     fh.writelines(question['difficulty']+"  \n")
     fh.writelines(convert(question['translatedContent']))
     #题解
-    fh.writelines(convert("\n### 题解:  \n* 思路  \n\n* 代码  \n```  \n```"))
+    fh.writelines(convert("\n### 题解:  \n* 思路  \n\n* 代码  \n```c++\n\n```"))
     fh.close()
 
 
