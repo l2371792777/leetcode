@@ -7,11 +7,13 @@
 
 using namespace std;
 
-struct ListNode
+struct TreeNode
 {
     int val;
-    ListNode *next;
-    ListNode(int x) : val(x), next(NULL) {}
+    TreeNode *next;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode(int x) : val(x), left(NULL), right(NULL), next(NULL) {}
 };
 
 class Solution

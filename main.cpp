@@ -8,11 +8,13 @@
 
 using namespace std;
 
-struct ListNode
+struct TreeNode
 {
     int val;
-    ListNode *next;
-    ListNode(int x) : val(x), next(NULL) {}
+    TreeNode *next;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode(int x) : val(x), left(NULL), right(NULL), next(NULL) {}
 };
 
 class Solution
@@ -20,21 +22,35 @@ class Solution
 public:
     void test()
     {
-        vector<int> test = {5, 7, 7, 8, 8, 10};
-        cout << missingNumber(test);
+        cout << getHint("1122", "1222");
     }
-    int missingNumber(vector<int>& nums) {
-        int n = nums.size();
-        int sum = 0;
-        for (int i = 0; i <= n; i++)
+    string getHint(string secret, string guess)
+    {
+        map<char, int> hogo;
+        map<char, int> hogs;
+        for (int i = 0; i < secret.size(); i++)
         {
-            sum += i;
+            hogo[secret[i]]++;
+            hogs[guess[i]]++;
         }
-        for (int i : nums)
+        int A = 0, B = 0;
+        for (int i = 0; i < secret.size(); i++)
         {
-            sum -= i;
+            if (secret[i] == guess[i])
+            {
+                A++;
+                hogo[secret[i]]--;
+                hogs[secret[i]]--;
+            }
+			else if (hogo[guess[i]] != 0 && hogs[guess[i]] != 0)
+            {
+                B++;
+                hogo[guess[i]]--;
+                hogs[guess[i]]--;
+            }
         }
-        return sum;
+
+        return to_string(A) + 'A' + to_string(B) + 'B';
     }
 };
 

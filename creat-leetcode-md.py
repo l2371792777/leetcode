@@ -27,7 +27,7 @@ def get_problem_content(slug):
 
     # print(content)
     question = content['data']['question']
-    print(question["questionId"])
+    print("questionId:"+question["questionId"]+"\ndifficulty:"+question['difficulty'])
     #markdown文档路径
     fileName=pre_dir+"["+question["difficulty"]+"]-"+question["questionId"]+"-"+question["title"]+".md"
     fh = open(fileName, 'w', encoding='utf-8')

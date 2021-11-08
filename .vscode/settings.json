@@ -11,6 +11,8 @@
         "istream": "cpp",
         "limits": "cpp",
         "numeric": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "cmath": "cpp",
+        "iostream": "cpp"
     }
 }

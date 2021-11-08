@@ -6,17 +6,17 @@
 using namespace std;
 
 //   Definition for singly-linked list.
-struct ListNode
+struct TreeNode
 {
     int val;
-    ListNode *next;
-    ListNode() : val(0), next(nullptr) {}
-    ListNode(int x) : val(x), next(nullptr) {}
-    ListNode(int x, ListNode *next) : val(x), next(next) {}
+    TreeNode *next;
+    TreeNode() : val(0), next(nullptr) {}
+    TreeNode(int x) : val(x), next(nullptr) {}
+    TreeNode(int x, TreeNode *next) : val(x), next(next) {}
 };
 
 void test();
-vector<ListNode *> splitListToParts(ListNode *head, int k);
+vector<TreeNode *> splitListToParts(TreeNode *head, int k);
 
 int main()
 {
@@ -26,17 +26,17 @@ int main()
 
 void test()
 {
-    ListNode hogo(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, NULL)))));
+    TreeNode hogo(1, new TreeNode(2, new TreeNode(3, new TreeNode(4, new TreeNode(5, NULL)))));
     splitListToParts(&hogo, 2);
 }
 
-vector<ListNode *> splitListToParts(ListNode *head, int k)
+vector<TreeNode *> splitListToParts(TreeNode *head, int k)
 {
-    vector<ListNode *> parts(k, nullptr);
+    vector<TreeNode *> parts(k, nullptr);
 
     //获取链表长度
     int n = 0;
-    ListNode *hogo = head;
+    TreeNode *hogo = head;
     while (hogo != NULL)
     {
         n++;
@@ -62,7 +62,7 @@ vector<ListNode *> splitListToParts(ListNode *head, int k)
             cout <<partsize<<" "<< hogo->val << endl;
             hogo = hogo->next;
         }
-        ListNode *temp = hogo->next;
+        TreeNode *temp = hogo->next;
         hogo->next = NULL;
         hogo = temp;
     }
