@@ -1,0 +1,302 @@
+create-> //...leetcode_492_2021-10-23
+parameters:test
+create-> //...leetcode_test_2021-10-23
+
+parameters:test
+create-> //...leetcode_test_2021-10-23
+
+parameters:test
+create-> //...leetcode_test_2021-10-23
+
+parameters:638
+create-> //...leetcode_638_2021-10-24
+
+parameters:240
+create-> //...leetcode_240_2021-10-25
+
+parameters:9
+create-> //...leetcode_9_2021-10-25
+
+parameters:496
+create-> //...leetcode_496_2021-10-26
+parameters:11
+create-> //...leetcode_11_2021-10-26
+parameters:12
+create-> //...leetcode_12_2021-10-26
+parameters:20
+create=> //...leetcode_20_2021-10-27
+parameters:301
+create=> //...leetcode_301_2021-10-27
+parameters:301
+difficulty:Difficult
+create=> //...leetcode_301_2021-10-27
+parameters:22
+difficulty:Medium
+create=> //...leetcode_22_2021-10-27
+parameters:869
+difficulty:Medium
+create=> //...leetcode_869_2021-10-28
+parameters:47
+difficulty:Medium
+create=> //...leetcode_47_2021-10-28
+parameters:231
+difficulty:Simple
+create=> //...leetcode_231_2021-10-28
+parameters:test
+difficulty:Medium
+create=> //...leetcode_test_2021-10-29
+parameters:test
+difficulty:Medium
+create=> //...leetcode_test_2021-10-29
+parameters:test
+difficulty:Simple
+create=> //...leetcode_test_2021-10-30
+parameters:test
+difficulty:Simple
+create=> //...leetcode_test
+parameters:test
+difficulty:Medium
+create=> //...leetcode_test_2021-10-30
+parameters:test
+difficulty:Simple
+create=> leetcode_test_2021-10-30
+parameters:test
+difficulty:Simple
+create=> leetcode_test_2021-10-30
+parameters:test
+difficulty:Simple
+create=> leetcode_test_2021-10-30
+parameters:test
+difficulty:Simple
+create=> creattime:2021-10-30
+parameters:test
+difficulty:Simple
+create=> creat time:2021-10-30
+Sat Oct 30 08:46:00 PM CST 2021
+echo -e "title:  
+questionId:  
+difficult:Easy  " >'leet-test/leetcode/[Easy]--.md'
+Sat Oct 30 08:46:20 PM CST 2021
+echo -e "title:  
+questionId:  
+difficult:Easy  " >'leet-test/leetcode/[Easy]--.md'
+Sat Oct 30 08:48:12 PM CST 2021
+echo -e "title:Two Num  
+questionId:001  
+difficult:Medium  " >'leet-test/leetcode/[Medium]-001-Two Num.md'
+Sat Oct 30 08:50:12 PM CST 2021
+echo -e "title:Two Num  
+questionId:001  
+difficult:Medium  " >'leet-test/leetcode/[Medium]-001-Two Num.md'
+Sun Oct 31 01:55:22 PM CST 2021
+two-sum
+Sun Oct 31 01:55:35 PM CST 2021
+two-sum
+Sun Oct 31 01:55:55 PM CST 2021
+two-sum
+Sun Oct 31 02:00:04 PM CST 2021
+title:keyboard-row
+Sun Oct 31 02:03:32 PM CST 2021
+title:keyboard-row
+Sun Oct 31 02:10:21 PM CST 2021
+title:keyboard-row
+Sun Oct 31 02:10:53 PM CST 2021
+title:keyboard-row
+Sun Oct 31 02:11:07 PM CST 2021
+title:keyboard-row
+Mon Nov  1 10:46:27 AM CST 2021
+title:distribute-candies
+Mon Nov  1 10:52:50 AM CST 2021
+title:distribute-candies
+Mon Nov  1 09:47:50 PM CST 2021
+title:distribute-candies
+Mon Nov  1 09:54:24 PM CST 2021
+575
+title:distribute-candies
+Mon Nov  1 09:54:35 PM CST 2021
+575
+title:distribute-candies
+Mon Nov  1 09:55:30 PM CST 2021
+575
+title:distribute-candies
+Mon Nov  1 09:55:42 PM CST 2021
+575
+title:distribute-candies
+Mon Nov  1 09:56:46 PM CST 2021
+575
+title:distribute-candies
+Tue Nov  2 01:04:58 PM CST 2021
+questionId:237
+title:delete-node-in-a-linked-list
+Tue Nov  2 03:48:24 PM CST 2021
+questionId:-1
+title:yong-liang-ge-zhan-shi-xian-dui-lie-lcof
+Tue Nov  2 03:48:40 PM CST 2021
+questionId:-1
+title:yong-liang-ge-zhan-shi-xian-dui-lie-lcof
+Tue Nov  2 03:50:08 PM CST 2021
+questionId:-1
+title:yong-liang-ge-zhan-shi-xian-dui-lie-lcof
+Tue Nov  2 03:50:51 PM CST 2021
+questionId:-1
+title:yong-liang-ge-zhan-shi-xian-dui-lie-lcof
+Tue Nov  2 03:51:27 PM CST 2021
+questionId:-1
+title:yong-liang-ge-zhan-shi-xian-dui-lie-lcof
+Tue Nov  2 04:26:43 PM CST 2021
+questionId:10086
+title:bao-han-minhan-shu-de-zhan-lcof
+Tue Nov  2 04:26:53 PM CST 2021
+questionId:10086
+title:bao-han-minhan-shu-de-zhan-lcof
+Wed Nov  3 06:10:03 PM CST 2021
+questionId:-1
+title:trapping-rain-water-ii
+Wed Nov  3 06:10:25 PM CST 2021
+questionId:10086
+title:trapping-rain-water-ii
+Wed Nov  3 06:21:41 PM CST 2021
+questionId:10086
+title:cong-wei-dao-tou-da-yin-lian-biao-lcof
+Wed Nov  3 06:22:11 PM CST 2021
+questionId:10086
+title:problems/fan-zhuan-lian-biao-lcof
+Wed Nov  3 06:22:26 PM CST 2021
+questionId:10086
+title:problems/fan-zhuan-lian-biao-lcof
+Wed Nov  3 06:22:33 PM CST 2021
+questionId:10086
+title:fan-zhuan-lian-biao-lcof
+Wed Nov  3 06:23:06 PM CST 2021
+questionId:10086
+title:fu-za-lian-biao-de-fu-zhi-lcof
+***Thu Nov  4 02:00:12 PM CST 2021
+questionId:367
+title:valid-perfect-square
+***Thu Nov  4 02:00:57 PM CST 2021
+questionId:367
+title:valid-perfect-square
+***Thu Nov  4 02:09:53 PM CST 2021
+questionId:10086
+title:ti-huan-kong-ge-lcof
+***Thu Nov  4 02:11:18 PM CST 2021
+questionId:10086
+title:zuo-xuan-zhuan-zi-fu-chuan-lcof
+***Thu Nov  4 02:17:44 PM CST 2021
+questionId:
+title:zuo-xuan-zhuan-zi-fu-chuan-lcof
+***Thu Nov  4 02:17:57 PM CST 2021
+questionId:100330
+title:zuo-xuan-zhuan-zi-fu-chuan-lcof
+***Sat Nov  6 10:33:54 AM CST 2021
+questionId:
+title:longest-arithmetic-subsequence-of-given-difference
+***Sat Nov  6 10:34:15 AM CST 2021
+questionId:1330
+title:longest-arithmetic-subsequence-of-given-difference
+***Sat Nov  6 10:35:12 AM CST 2021
+questionId:268
+title:missing-number
+***Sat Nov  6 10:36:30 AM CST 2021
+questionId:100275
+title:shu-zu-zhong-zhong-fu-de-shu-zi-lcof
+***Sat Nov  6 10:37:10 AM CST 2021
+questionId:100329
+title:zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof
+***Sat Nov  6 10:37:57 AM CST 2021
+questionId:
+title:que-shi-de-shu-zi-lcof
+***Sat Nov  6 10:38:10 AM CST 2021
+questionId:
+title:que-shi-de-shu-zi-lcof
+***Sat Nov  6 10:38:25 AM CST 2021
+questionId:100331
+title:que-shi-de-shu-zi-lcof
+***Sun Nov  7 01:13:04 PM CST 2021
+questionId:
+title:range-addition-ii
+***Sun Nov  7 01:13:10 PM CST 2021
+questionId:598
+title:range-addition-ii
+***Sun Nov  7 01:29:00 PM CST 2021
+questionId:100276
+title:er-wei-shu-zu-zhong-de-cha-zhao-lcof
+***Sun Nov  7 01:42:06 PM CST 2021
+questionId:100278
+title:xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof
+***Sun Nov  7 01:56:59 PM CST 2021
+questionId:100316
+title:di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof
+***Sun Nov  7 02:06:12 PM CST 2021
+questionId:100311
+title:cong-shang-dao-xia-da-yin-er-cha-shu-lcof
+***Sun Nov  7 06:10:12 PM CST 2021
+questionId:100278
+title:xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof
+***Sun Nov  7 06:11:39 PM CST 2021
+questionId:
+title:cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof
+***Sun Nov  7 06:11:52 PM CST 2021
+questionId:
+title:cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof
+***Sun Nov  7 06:12:03 PM CST 2021
+questionId:100312
+title:cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof
+***Sun Nov  7 06:28:27 PM CST 2021
+questionId:
+title:cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof
+***Sun Nov  7 06:28:30 PM CST 2021
+questionId:
+title:cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof
+***Sun Nov  7 06:28:38 PM CST 2021
+questionId:100314
+title:cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof
+***Sun Nov  7 06:42:10 PM CST 2021
+questionId:100314
+title:cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof
+***Sun Nov  7 07:06:06 PM CST 2021
+questionId:100314
+difficulty:Medium
+title:cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof
+***Mon Nov  8 02:33:52 PM CST 2021
+questionId:299
+difficulty:Medium
+title:bulls-and-cows
+***Tue Nov  9 03:24:19 PM CST 2021
+questionId:100287
+difficulty:Medium
+title:shu-de-zi-jie-gou-lcof
+***Tue Nov  9 03:47:03 PM CST 2021
+questionId:100287
+difficulty:Medium
+title:shu-de-zi-jie-gou-lcof
+***Tue Nov  9 03:48:35 PM CST 2021
+questionId:100287
+difficulty:Medium
+title:shu-de-zi-jie-gou-lcof
+***Tue Nov  9 03:48:59 PM CST 2021
+questionId:100287
+difficulty:Medium
+title:shu-de-zi-jie-gou-lcof
+***Tue Nov  9 03:50:20 PM CST 2021
+
+title:shu-de-zi-jie-gou-lcof
+***Tue Nov  9 03:50:31 PM CST 2021
+questionId:100287
+difficulty:Medium
+title:shu-de-zi-jie-gou-lcof
+***Tue Nov  9 03:51:12 PM CST 2021
+questionId:100287
+difficulty:Medium
+title:shu-de-zi-jie-gou-lcof
+***Tue Nov  9 03:52:22 PM CST 2021
+questionId:100287
+difficulty:Medium
+title:shu-de-zi-jie-gou-lcof
+***Tue Nov  9 03:53:06 PM CST 2021
+
+title:shu-de-zi-jie-gou-lcof
+***Tue Nov  9 03:53:14 PM CST 2021
+questionId:100287
+difficulty:Medium
+title:shu-de-zi-jie-gou-lcof

@@ -45,9 +45,12 @@ Remove = [
     "<em>",
     "</em>",
     "<sup>",
-    "</sup>"
+    "</sup>",
+    "<br>"
 ]
 Replace = [
+    ["<li></?code>", "<li>"],
+    ["</?code></li>", "</li>"],
     ["</?code>", "``"],
     ["</?strong>", ""],
     ["<pre>", "```\n"],

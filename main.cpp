@@ -3,7 +3,6 @@
 #include <algorithm>
 #include <limits.h>
 #include <string>
-#include <map>
 #include <cmath>
 
 using namespace std;
@@ -22,35 +21,26 @@ class Solution
 public:
     void test()
     {
-        cout << getHint("1122", "1222");
+        vector<int> test = {1, 4};
+        int d = 2;
+        cout << findPoisonedDuration(test, d);
     }
-    string getHint(string secret, string guess)
+    int findPoisonedDuration(vector<int> &timeSeries, int duration)
     {
-        map<char, int> hogo;
-        map<char, int> hogs;
-        for (int i = 0; i < secret.size(); i++)
-        {
-            hogo[secret[i]]++;
-            hogs[guess[i]]++;
-        }
-        int A = 0, B = 0;
-        for (int i = 0; i < secret.size(); i++)
-        {
-            if (secret[i] == guess[i])
-            {
-                A++;
-                hogo[secret[i]]--;
-                hogs[secret[i]]--;
-            }
-			else if (hogo[guess[i]] != 0 && hogs[guess[i]] != 0)
-            {
-                B++;
-                hogo[guess[i]]--;
-                hogs[guess[i]]--;
-            }
-        }
+        int res = 0;
 
-        return to_string(A) + 'A' + to_string(B) + 'B';
+        for (int i = 0; i < timeSeries.size(); i++)
+        {
+            if (i == timeSeries.size() - 1 || timeSeries[i] + duration - 1 < timeSeries[i+1])
+            {
+                res += duration;
+            }
+            else if (timeSeries[i] + duration - 1 >= timeSeries[i+1])
+            {
+                res = res + timeSeries[i + 1] - timeSeries[i];
+            }
+        }
+        return res;
     }
 };
 

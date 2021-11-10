@@ -2,7 +2,7 @@
 
 #处理url
 title='
-https://leetcode-cn.com/problems/bulls-and-cows/
+https://leetcode-cn.com/problems/teemo-attacking/
 '
 title=${title#*//}
 title=${title#*/}
