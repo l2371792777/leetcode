@@ -2,7 +2,7 @@
 
 #处理url
 title='
-https://leetcode-cn.com/problems/teemo-attacking/
+https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/
 '
 title=${title#*//}
 title=${title#*/}
