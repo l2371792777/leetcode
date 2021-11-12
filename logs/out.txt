@@ -31,3 +31,15 @@ title:er-cha-shu-de-jing-xiang-lcof
 questionId:100289
 difficulty:Easy
 title:dui-cheng-de-er-cha-shu-lcof
+***Fri Nov 12 05:52:29 PM CST 2021
+questionId:375
+difficulty:Medium
+title:guess-number-higher-or-lower-ii
+***Fri Nov 12 05:54:20 PM CST 2021
+questionId:375
+difficulty:Medium
+title:guess-number-higher-or-lower-ii
+***Fri Nov 12 05:55:57 PM CST 2021
+questionId:375
+difficulty:Medium
+title:guess-number-higher-or-lower-ii

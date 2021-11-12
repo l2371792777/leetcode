@@ -2,7 +2,7 @@
 
 #处理url
 title='
-https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/
+https://leetcode-cn.com/problems/guess-number-higher-or-lower-ii/
 '
 title=${title#*//}
 title=${title#*/}
