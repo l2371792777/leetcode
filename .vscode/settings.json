@@ -13,6 +13,7 @@
         "numeric": "cpp",
         "valarray": "cpp",
         "cmath": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "ratio": "cpp"
     }
 }

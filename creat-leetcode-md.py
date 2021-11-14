@@ -49,8 +49,8 @@ Remove = [
     "<br>"
 ]
 Replace = [
-    ["<li></?code>", "<li>"],
-    ["</?code></li>", "</li>"],
+    # ["<li></?code>", "<li>"],
+    # ["</?code></li>", "</li>"],
     ["</?code>", "\n```\n"],
     ["</?strong>", ""],
     ["<pre>", "```\n"],

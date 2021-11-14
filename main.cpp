@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <limits.h>
 #include <string>
+#include <map>
 #include <cmath>
 
 using namespace std;
@@ -16,35 +17,49 @@ struct TreeNode
     TreeNode(int x) : val(x), left(NULL), right(NULL), next(NULL) {}
 };
 
-class Solution
+class MapSum
 {
+    map<string, int> sums;
+    map<string, int> cur;
+
 public:
     void test()
     {
     }
-    int getMoneyAmount(int n)
+    MapSum()
     {
-        vector<vector<int>> f(n + 1, vector<int>(n + 1));
-        for (int i = n - 1; i >= 1; i--)
+    }
+
+    void insert(string key, int val)
+    {
+        string tmp = "";
+        if (cur.find(key) != cur.end())
         {
-            for (int j = i + 1; j <= n; j++)
+            //若已存在，删除当前存储值
+            for (auto i : key)
             {
-                int minCost = INT_MAX;
-                for (int k = i; k < j; k++)
-                {
-                    int cost = k + max(f[i][k - 1], f[k + 1][j]);
-                    minCost = min(minCost, cost);
-                }
-                f[i][j] = minCost;
+                tmp += i;
+                sums[tmp] -= cur[key];
             }
         }
-        return f[1][n];
+        cur[key]=val;
+        tmp = "";
+        for (auto i : key)
+        {
+            tmp += i;
+            sums[tmp] += val;
+        }
+    }
+
+    int sum(string prefix)
+    {
+        return sums[prefix];
     }
 };
 
 int main()
 {
-    Solution solu;
+    MapSum solu;
     solu.test();
     return 0;
 }

@@ -43,3 +43,11 @@ title:guess-number-higher-or-lower-ii
 questionId:375
 difficulty:Medium
 title:guess-number-higher-or-lower-ii
+***Sat Nov 13 02:23:39 PM CST 2021
+questionId:520
+difficulty:Easy
+title:detect-capital
+***Sun Nov 14 01:10:45 PM CST 2021
+questionId:677
+difficulty:Medium
+title:map-sum-pairs
