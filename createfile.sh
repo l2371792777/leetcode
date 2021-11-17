@@ -2,7 +2,7 @@
 
 #处理url
 title='
-https://leetcode-cn.com/problems/map-sum-pairs/
+https://leetcode-cn.com/problems/maximum-product-of-word-lengths/
 '
 title=${title#*//}
 title=${title#*/}

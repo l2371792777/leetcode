@@ -1,13 +1,20 @@
+/**
+ * @description leetcode练习
+ */
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
 #include <limits.h>
 #include <string>
-#include <map>
+#include <set>
 #include <cmath>
 
 using namespace std;
 
+/**
+ * 二叉树
+ */
 struct TreeNode
 {
     int val;
@@ -17,49 +24,74 @@ struct TreeNode
     TreeNode(int x) : val(x), left(NULL), right(NULL), next(NULL) {}
 };
 
-class MapSum
+class Solution
 {
-    map<string, int> sums;
-    map<string, int> cur;
-
 public:
+    /**
+     * 测试
+     * @param
+     */
     void test()
     {
     }
-    MapSum()
-    {
-    }
 
-    void insert(string key, int val)
+    /**
+     * 判断是否有重复字母
+     * @param word1
+     * @param word2
+     * return
+     */
+    bool isHasEqual(string word1, string word2)
     {
-        string tmp = "";
-        if (cur.find(key) != cur.end())
+        set<char> cur1;
+        set<char> cur2;
+        for (auto i : word1)
         {
-            //若已存在，删除当前存储值
-            for (auto i : key)
+            cur1.insert(i);
+        }
+        for (auto i : word2)
+        {
+            if (cur1.find(i) != cur1.end())
             {
-                tmp += i;
-                sums[tmp] -= cur[key];
+                return true;
+            }
+            cur2.insert(i);
+        }
+        for (auto i : word1)
+        {
+            if (cur2.find(i) != cur2.end())
+            {
+                return true;
             }
         }
-        cur[key]=val;
-        tmp = "";
-        for (auto i : key)
-        {
-            tmp += i;
-            sums[tmp] += val;
-        }
+        return false;
     }
 
-    int sum(string prefix)
+    /**
+     * 题解
+     * @param
+     */
+    int maxProduct(vector<string> &words)
     {
-        return sums[prefix];
+        int lengthmax = 0;
+        for (int i = 0; i < words.size(); i++)
+        {
+            for (int j = i + 1; j < words.size(); j++)
+            {
+                int mul = words[i].size() * words[j].size();
+                if (mul > lengthmax && !isHasEqual(words[i], words[j]))
+                {
+                    lengthmax = mul;
+                }
+            }
+        }
+        return lengthmax;
     }
 };
 
 int main()
 {
-    MapSum solu;
+    Solution solu;
     solu.test();
     return 0;
 }

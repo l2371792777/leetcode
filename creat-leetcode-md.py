@@ -33,7 +33,7 @@ def get_problem_content(slug):
     fh = open(fileName, 'w', encoding='utf-8')
     # 题目详细信息
     fh.writelines("## "+question['questionId']+"."+question["translatedTitle"]+"\n")
-    fh.writelines(question['difficulty']+"  \n")
+    fh.writelines("``difficulty``:``"+question['difficulty']+"``  \n<hr>\n")
     fh.writelines(convert(question['translatedContent']))
     #题解
     fh.writelines(convert("\n### 题解:  \n* 思路  \n\n* 代码  \n```c++\n\n```"))
@@ -51,7 +51,7 @@ Remove = [
 Replace = [
     # ["<li></?code>", "<li>"],
     # ["</?code></li>", "</li>"],
-    ["</?code>", "\n```\n"],
+    ["</?code>", "``"],
     ["</?strong>", ""],
     ["<pre>", "```\n"],
     ["</pre>", "\n```"],

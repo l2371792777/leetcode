@@ -1,3 +1,7 @@
+/**
+ * @description leetcode练习
+ */
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -7,6 +11,9 @@
 
 using namespace std;
 
+    /** 
+     * 二叉树 
+    */
 struct TreeNode
 {
     int val;
@@ -19,11 +26,18 @@ struct TreeNode
 class Solution
 {
 public:
+    /** 
+     * 测试
+     * @param 
+    */
     void test()
     {
         
     }
-
+    /** 
+     * 题解
+     * @param 
+    */
 };
 
 int main()
