@@ -2,7 +2,7 @@
 
 #处理url
 title='
-https://leetcode-cn.com/problems/binary-tree-tilt/
+https://leetcode-cn.com/problems/integer-replacement/
 '
 title=${title#*//}
 title=${title#*/}
