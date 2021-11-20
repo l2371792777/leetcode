@@ -86,3 +86,7 @@ title:binary-tree-tilt
 questionId:397
 difficulty:Medium
 title:integer-replacement
+***Sat Nov 20 02:20:29 PM CST 2021
+questionId:594
+difficulty:Easy
+title:longest-harmonious-subsequence

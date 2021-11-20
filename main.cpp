@@ -7,6 +7,7 @@
 #include <algorithm>
 #include <limits.h>
 #include <string>
+#include <map>
 #include <cmath>
 
 using namespace std;
@@ -33,27 +34,37 @@ public:
      */
     void test()
     {
-        cout << integerReplacement(2000000) << endl;
+        vector<int> test = {
+            1,1,1,1};
+        cout << findLHS(test);
     }
 
     /**
      * 题解
      * @param
      */
-    int integerReplacement(int n)
+    int findLHS(vector<int> &nums)
     {
-        if (n == 1)
+        map<int, int> res;
+        for (int i : nums)
         {
-            return 0;
+            res[i]++;
         }
-        if (n % 2 == 0)
+        int fmax = 0;
+        int tmp = 0;
+        for (int i : nums)
         {
-            return 1 + integerReplacement(n / 2);
+            if (res[i + 1] == 0)
+            {
+                continue;
+            }
+            tmp =res[i] + res[i + 1];
+            if (tmp > fmax)
+            {
+                fmax = tmp;
+            }
         }
-        else
-        {
-            return 2 + min(integerReplacement(n / 2), integerReplacement(n / 2 + 1));
-        }
+        return fmax;
     }
 };
 
