@@ -43,7 +43,7 @@ public:
 
 int main()
 {
-    Solution solu;
-    solu.test();
+    // Solution solu;
+    // solu.test();
     return 0;
 }

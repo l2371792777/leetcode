@@ -2,7 +2,7 @@
 
 #处理url
 title='
-https://leetcode-cn.com/problems/longest-harmonious-subsequence/
+https://leetcode-cn.com/problems/shuffle-an-array/
 '
 title=${title#*//}
 title=${title#*/}
@@ -23,6 +23,6 @@ if [ $logline -gt 300 ]; then
 fi
 
 #markdown
-questionMes=`python creat-leetcode-md.py $title $pre_dir`
+questionMes=$(python python/creat-leetcode-md.py $title $pre_dir)
 echo -e "***$(date)\n$questionMes\ntitle:$title" >>logs/out.txt
 cp old/main.cpp main.cpp
