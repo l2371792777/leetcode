@@ -2,7 +2,7 @@
 
 #处理url
 title='
-https://leetcode-cn.com/problems/shuffle-an-array/
+https://leetcode-cn.com/problems/buddy-strings/
 '
 title=${title#*//}
 title=${title#*/}

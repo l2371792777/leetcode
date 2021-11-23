@@ -26,8 +26,6 @@ struct TreeNode
 
 class Solution
 {
-    vector<int> cur;
-
 public:
     /**
      * 测试
@@ -35,54 +33,60 @@ public:
      */
     void test()
     {
-        vector<int> test = reset();
-        for (auto i : test)
-        {
-            cout << i << " ";
-        }
-        cout << endl;
-        test=shuffle();
-        for (auto i : test)
-        {
-            cout << i << " ";
-        }
-        cout << endl;
+        string test1 = "aabcaaa";
+        string test2 = "aabcaaa";
+        cout << "test..." << endl;
+        cout << buddyStrings(test1, test2);
     }
 
     /**
      * 题解
-     * @param nums 无重复数组
+     * @param
      */
-    Solution(vector<int> &nums)
+    bool buddyStrings(string s, string goal)
     {
-        cur = nums;
-    }
-
-    vector<int> reset()
-    {
-        return cur;
-    }
-
-    vector<int> shuffle()
-    {
-        vector<int> tmp = cur;
-        vector<int> res;
-        int n, i;
-        while (!tmp.empty())
+        if(s.size()!=goal.size())
         {
-            n = tmp.size();
-            i = rand() % n;
-            res.push_back(tmp[i]);
-            tmp.erase(tmp.begin() + i);
+            return false;
         }
-        return res;
+        
+        if (s == goal)
+        {
+            //统计单词出现个数
+            vector<int> words(26);
+            for (auto i : s)
+            {
+                words[i - 'a']++;
+                if (words[i - 'a'] > 1)
+                {
+                    return true;
+                }
+            }
+        }
+        for (int i = 0; i < s.size(); i++)
+        {
+            if (s[i] == goal[i])
+            {
+                continue;
+            }
+            for (int j = i + 1; j < s.size(); j++)
+            {
+                swap(s[i], s[j]);
+                if (s == goal)
+                {
+                    return true;
+                }
+                swap(s[i], s[j]);
+            }
+        }
+
+        return false;
     }
 };
 
 int main()
 {
-    vector<int> res = {1, 2, 3, 4, 5, 6};
-    Solution solu(res);
+    Solution solu;
     solu.test();
     return 0;
 }
