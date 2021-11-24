@@ -2,7 +2,7 @@
 
 #处理url
 title='
-https://leetcode-cn.com/problems/buddy-strings/
+https://leetcode-cn.com/problems/reconstruct-original-digits-from-english/
 '
 title=${title#*//}
 title=${title#*/}

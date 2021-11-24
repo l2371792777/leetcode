@@ -7,6 +7,7 @@
 #include <algorithm>
 #include <limits.h>
 #include <string>
+#include <map>
 #include <cmath>
 
 using namespace std;
@@ -33,54 +34,44 @@ public:
      */
     void test()
     {
-        string test1 = "aabcaaa";
-        string test2 = "aabcaaa";
-        cout << "test..." << endl;
-        cout << buddyStrings(test1, test2);
+        string test = "zeroonetwothreefourfivesixseveneightnine";
+        cout << originalDigits(test);
     }
 
     /**
      * 题解
      * @param
      */
-    bool buddyStrings(string s, string goal)
+    string originalDigits(string s)
     {
-        if(s.size()!=goal.size())
-        {
-            return false;
-        }
-        
-        if (s == goal)
-        {
-            //统计单词出现个数
-            vector<int> words(26);
-            for (auto i : s)
-            {
-                words[i - 'a']++;
-                if (words[i - 'a'] > 1)
-                {
-                    return true;
-                }
-            }
-        }
-        for (int i = 0; i < s.size(); i++)
-        {
-            if (s[i] == goal[i])
-            {
-                continue;
-            }
-            for (int j = i + 1; j < s.size(); j++)
-            {
-                swap(s[i], s[j]);
-                if (s == goal)
-                {
-                    return true;
-                }
-                swap(s[i], s[j]);
-            }
+        map<char, int> c;
+        for (char ch: s) {
+            ++c[ch];
         }
 
-        return false;
+        vector<int> cnt(10);
+        cnt[0] = c['z'];
+        cnt[2] = c['w'];
+        cnt[4] = c['u'];
+        cnt[6] = c['x'];
+        cnt[8] = c['g'];
+
+        cnt[3] = c['h'] - cnt[8];
+        cnt[5] = c['f'] - cnt[4];
+        cnt[7] = c['s'] - cnt[6];
+
+        cnt[1] = c['o'] - cnt[0] - cnt[2] - cnt[4];
+
+        cnt[9] = c['i'] - cnt[5] - cnt[6] - cnt[8];
+
+        string ans;
+        for (int i = 0; i < 10; ++i) {
+            for (int j = 0; j < cnt[i]; ++j) {
+                ans += char(i + '0');
+            }
+        }
+        return ans;
+
     }
 };
 
