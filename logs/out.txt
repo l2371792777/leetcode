@@ -120,3 +120,7 @@ title:buddy-strings
 questionId:423
 difficulty:Medium
 title:reconstruct-original-digits-from-english
+***Tue Nov 30 02:54:47 PM CST 2021
+questionId:400
+difficulty:Medium
+title:nth-digit

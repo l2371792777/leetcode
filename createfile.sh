@@ -2,7 +2,7 @@
 
 #处理url
 title='
-https://leetcode-cn.com/problems/reconstruct-original-digits-from-english/
+https://leetcode-cn.com/problems/nth-digit/
 '
 title=${title#*//}
 title=${title#*/}
