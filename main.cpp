@@ -33,45 +33,33 @@ public:
      */
     void test()
     {
-        cout << findNthDigit(1000000000);
+        cout << maxPower("triplepillooooow");
     }
 
     /**
      * 题解
      * @param
      */
-    int findNthDigit(int n)
+    int maxPower(string s)
     {
-        int pos = 1; //判断位数
-        long long digits = 9;
-        long long num = 0; //每位占据数字个数
-        while (n)
+        int res = 1;
+        int maxres = 1;
+        for (int i = 1; i < s.size(); i++)
         {
-            num = pos * digits;
-            cout << num << endl;
-            if (n <= num)
+            if (s[i] == s[i - 1])
             {
-                break;
+                res++;
             }
-            pos++;
-            digits *= 10;
-            n = n - num;
+            else
+            {
+                res = 1;
+            }
+            if (res > maxres)
+            {
+                maxres = res;
+            }
         }
-        //第几个数字
-        int offset = (n - 1) / pos;
-        cout <<"offset... "<< offset << endl;
-        //获取位数最小数字
-        int beginDigit = 1;
-        for (int i = 0; i < pos - 1; i++)
-        {
-            beginDigit *= 10;
-        }
-        //数字内位数
-        int mod = (n - 1) % pos;
-        cout <<"mod... "<< mod << endl;
-        string resDigit = to_string(beginDigit + offset);
-        cout <<"resDigit... "<< resDigit << endl;
-        return resDigit[mod] - '0';
+        return maxres;
     }
 };
 

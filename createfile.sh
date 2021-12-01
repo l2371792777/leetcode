@@ -2,7 +2,7 @@
 
 #处理url
 title='
-https://leetcode-cn.com/problems/nth-digit/
+https://leetcode-cn.com/problems/consecutive-characters/
 '
 title=${title#*//}
 title=${title#*/}
