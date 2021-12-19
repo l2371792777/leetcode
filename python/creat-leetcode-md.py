@@ -1,4 +1,6 @@
+# -*- coding: UTF-8 -*-
 import requests, json,re,sys
+
 
 def get_problem_content(slug):
     user_agent = r'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36'
