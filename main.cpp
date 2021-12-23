@@ -39,6 +39,15 @@ public:
      * 题解
      * @param
      */
+    int findJudge(int n, vector<vector<int>>& trust) {
+        vector<int> pers(n);
+        vector<bool> sign(n);
+        for(auto it : trust)
+        {
+            pers[it[1]-1]++;
+            sign[it[0]-1]=true;
+        }
+    }
 };
 
 int main()
