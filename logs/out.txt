@@ -159,3 +159,14 @@ title:find-the-town-judge
 questionId:1122
 difficulty:Hard
 title:longest-duplicate-substring
+***Sat Jan  8 16:09:33 CST 2022
+
+title:longest-duplicate-substring
+***Sat Jan  8 16:10:22 CST 2022
+questionId:1122
+difficulty:Hard
+title:longest-duplicate-substring
+***Sat Jan  8 16:10:33 CST 2022
+questionId:89
+difficulty:Medium
+title:gray-code

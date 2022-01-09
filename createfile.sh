@@ -2,7 +2,7 @@
 
 #处理url
 title='
-https://leetcode-cn.com/problems/longest-duplicate-substring/
+https://leetcode-cn.com/problems/gray-code/
 '
 title=${title#*//}
 title=${title#*/}
