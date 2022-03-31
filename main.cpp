@@ -33,7 +33,6 @@ public:
      */
     void test()
     {
-        cout<<"这是一次测试： repo?";
     }
 
     /**
