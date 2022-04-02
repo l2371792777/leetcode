@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #处理url
-title='
+url='
 https://leetcode-cn.com/problems/gray-code/
 '
-title=${title#*//}
+title=${url#*//}
 title=${title#*/}
 title=${title#*/}
 title=${title%/*}
@@ -24,5 +24,5 @@ fi
 
 #markdown
 questionMes=$(python3 python/creat-leetcode-md.py $title $pre_dir)
-echo -e "***$(date)\n$questionMes\ntitle:$title" >>logs/out.txt
+echo -e "***$(date)\n$questionMes\url:$url" >>logs/out.txt
 cp old/main.cpp main.cpp
