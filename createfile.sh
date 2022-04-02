@@ -24,5 +24,5 @@ fi
 
 #markdown
 questionMes=$(python3 python/creat-leetcode-md.py $title $pre_dir)
-echo -e "***$(date)\n$questionMes\ntitle:$title" >>logs/out.txt
+echo -e "***$(date)\n$questionMes\ntitle:$title\n$title" >>logs/out.txt
 cp old/main.cpp main.cpp

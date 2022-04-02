@@ -34,7 +34,11 @@ public:
      */
     void test()
     {
-        cout<<"test repo";
+        vector<int> res=grayCode(3);
+        cout<<endl;
+        for(int i : res){
+            cout<<i<<" ";
+        }
     }
 
     /**
@@ -42,13 +46,23 @@ public:
      * @param
      */
     vector<int> grayCode(int n) {
-
+        if(n==1){
+            return {0,1};
+        }
+        int Gmax=pow(2,n)-1;
+        vector<int> res(Gmax+1);
+		res[0]=0;
+		res[Gmax]=2;
+        for(int i=0;i<=Gmax/2;i++){
+            
+        }
+        return res;
     }
 };
 
 int main()
 {
-    // Solution solu;
-    // solu.test();
+    Solution solu;
+    solu.test();
     return 0;
 }
