@@ -37,8 +37,28 @@ Medium
 
 ### 题解:  
 * 思路  
-
+与100312思路相同，相隔一层逆序打印即可
 * 代码  
 ```c++
-
+    void dfs(TreeNode *root, int h)
+    {
+        if (root == NULL)
+        {
+            return;
+        }
+        if (res.size() < (h + 1))
+        {
+            vector<int> temp;
+            res.push_back(temp);
+        }
+        if(h%2==0){
+          res[h].push_back(root->val);
+        }
+        else{
+          auto it=res[h].begin();
+          res[h].insert(it,root->val);
+        }
+        dfs(root->left, h + 1);
+        dfs(root->right, h + 1);
+    }
 ```
