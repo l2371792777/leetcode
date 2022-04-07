@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/bin/zsh
 
 #处理url
 url='
-https://leetcode-cn.com/problems/gray-code/
+https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/
 '
 title=${url#*//}
 title=${title#*/}

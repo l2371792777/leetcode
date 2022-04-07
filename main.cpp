@@ -8,7 +8,6 @@
 #include <limits.h>
 #include <string>
 #include <cmath>
-#include <set>
 
 using namespace std;
 
@@ -29,35 +28,19 @@ class Solution
 {
 public:
     /**
-     * 这是测试
+     * 测试
      * @param
      */
     void test()
     {
-        vector<int> res=grayCode(3);
-        cout<<endl;
-        for(int i : res){
-            cout<<i<<" ";
-        }
+        
     }
 
     /**
      * 题解
      * @param
      */
-    vector<int> grayCode(int n) {
-        if(n==1){
-            return {0,1};
-        }
-        int Gmax=pow(2,n)-1;
-        vector<int> res(Gmax+1);
-		res[0]=0;
-		res[Gmax]=2;
-        for(int i=0;i<=Gmax/2;i++){
-            
-        }
-        return res;
-    }
+
 };
 
 int main()
