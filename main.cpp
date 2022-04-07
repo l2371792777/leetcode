@@ -8,7 +8,6 @@
 #include <limits.h>
 #include <string>
 #include <cmath>
-#include <set>
 
 using namespace std;
 
@@ -29,26 +28,46 @@ class Solution
 {
 public:
     /**
-     * 这是测试
+     * 测试
      * @param
      */
     void test()
     {
-        cout<<"test repo";
+        vector<int> test={3,3,5,0,0,3,1,4};
+        int ret=maxProfit(test);
+        cout<<ret;
     }
 
     /**
      * 题解
      * @param
      */
-    vector<int> grayCode(int n) {
-
+    int maxProfit(vector<int>& prices) {
+        int size=prices.size()-1;
+        int ret_Max=0;
+        int ret_Min=0;
+        int Max=prices[size];
+        int Min=Max;
+        for(int i=size-1;i>=0;i--){
+            if(prices[i]>Max){
+                Max=prices[i];
+                Min=Max;
+            }
+            else if(prices[i]<Min){
+                Min=prices[i];
+                if((Max-Min)>(ret_Max-ret_Min)){
+                     ret_Max=Max;
+                     ret_Min=Min;
+                }
+            }
+        }
+        return ret_Max-ret_Min;
     }
 };
 
 int main()
 {
-    // Solution solu;
-    // solu.test();
+    Solution solu;
+    solu.test();
     return 0;
 }
