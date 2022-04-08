@@ -2,7 +2,7 @@
 
 #处理url
 url='
-https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/
+https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/
 '
 title=${url#*//}
 title=${title#*/}
