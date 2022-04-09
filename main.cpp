@@ -34,30 +34,44 @@ public:
      */
     void test()
     {
-        vector<vector<int>> test={{1,2,5},{3,2,1}};
-        cout<<maxValue(test);
+        cout<<lengthOfLongestSubstring("pwwkew");
     }
 
     /**
      * 题解
      * @param
      */
-    int maxValue(vector<vector<int>>& grid) {
-        int m=grid.size();
-        int n=grid[0].size();
-        vector<int> ret((m+1)*(n+1),0);
+    int lengthOfLongestSubstring(string s)
+    {
+        int n = s.size();
+        if (n <= 1)
+        {
+            return n;
+        }
+        //储存出现的字符位置
+        vector<int> charPosition(128,-1);
+        //0,1储存当前标志位，2,3储存 最长子串标志位，4储存 最长子串长度
+        vector<int> sign(5);
 
-        int ret_MAX=0;
-        for(int i=0;i<m;i++){
-            for(int j=0;j<n;j++){
-               int pos=n*i+j+i+n+2;
-               int pos_up=n*(i-1)+j+(i-1)+n+2;
-               int pos_left=pos-1;
-               ret[pos]=max(ret[pos_up]+grid[i][j],ret[pos_left]+grid[i][j]);
-               ret_MAX=max(ret_MAX,ret[pos]);
+        charPosition[s[0]] = 0;
+        for (int i = 1; i < n; i++)
+        {
+            //有重复字符 左侧指针后移
+            if (charPosition[s[i]] >= 0 && charPosition[s[i]] >= sign[0]) 
+            {
+                sign[0] = charPosition[s[i]]+1;
+            }
+            charPosition[s[i]] = i;
+            sign[1] = i;
+            if ((sign[1] - sign[0] + 1) > sign[4])
+            {
+                sign[4] = sign[1] - sign[0] + 1;
+                sign[2] = sign[0];
+                sign[3] = sign[1];
             }
         }
-        return ret_MAX;
+
+        return sign[4];
     }
 };
 
