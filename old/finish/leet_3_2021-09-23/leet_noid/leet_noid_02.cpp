@@ -2,29 +2,29 @@
 
 using namespace std;
 
-struct TreeNode
+struct ListNode
 {
     int val;
-    TreeNode *next;
-    TreeNode() : val(0), next(nullptr) {}
-    TreeNode(int x) : val(x), next(nullptr) {}
-    TreeNode(int x, TreeNode *next) : val(x), next(next) {}
+    ListNode *next;
+    ListNode() : val(0), next(nullptr) {}
+    ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 class MinStack
 {
 public:
-    TreeNode *reverseBetween(TreeNode *head, int left, int right);
+    ListNode *reverseBetween(ListNode *head, int left, int right);
     int test();
 };
 
-TreeNode *MinStack::reverseBetween(TreeNode *head, int left, int right)
+ListNode *MinStack::reverseBetween(ListNode *head, int left, int right)
 {
     if (head == NULL || right - left < 1)
     {
         return head;
     }
-    TreeNode *llhead;
-    TreeNode *lhead;
+    ListNode *llhead;
+    ListNode *lhead;
     lhead = head;
     int i;
     for (i = 1; i < left; i++)
@@ -32,8 +32,8 @@ TreeNode *MinStack::reverseBetween(TreeNode *head, int left, int right)
         llhead = lhead;
         lhead = lhead->next;
     }
-    TreeNode *mhead = lhead->next;
-    TreeNode *rhead = mhead->next;
+    ListNode *mhead = lhead->next;
+    ListNode *rhead = mhead->next;
     for (i; i < right; i++)
     {
         mhead->next = lhead;
@@ -57,10 +57,10 @@ TreeNode *MinStack::reverseBetween(TreeNode *head, int left, int right)
 
 int MinStack::test()
 {
-    TreeNode hogo(1, new TreeNode(2, new TreeNode(3, new TreeNode(4, new TreeNode(5, NULL)))));
+    ListNode hogo(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, NULL)))));
     MinStack init;
-    TreeNode *ptr = &hogo;
-    TreeNode *cptr = ptr;
+    ListNode *ptr = &hogo;
+    ListNode *cptr = ptr;
     while (cptr != NULL)
     {
         cout << cptr->val;

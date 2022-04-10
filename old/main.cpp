@@ -15,14 +15,14 @@ using namespace std;
 /**
  * 二叉树
  */
-struct TreeNode
+struct ListNode
 {
     int val;
-    TreeNode *next;
-    TreeNode *left;
-    TreeNode *right;
-    TreeNode() : val(0), left(NULL), right(NULL), next(NULL) {}
-    TreeNode(int x) : val(x), left(NULL), right(NULL), next(NULL) {}
+    ListNode *next;
+    ListNode *left;
+    ListNode *right;
+    ListNode() : val(0), left(NULL), right(NULL), next(NULL) {}
+    ListNode(int x) : val(x), left(NULL), right(NULL), next(NULL) {}
 };
 
 class Solution

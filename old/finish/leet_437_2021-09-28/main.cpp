@@ -8,18 +8,18 @@
 using namespace std;
 
 // Definition for a binary tree node.
-struct TreeNode
+struct ListNode
 {
     int val;
-    TreeNode *left;
-    TreeNode *right;
-    TreeNode() : val(0), left(nullptr), right(nullptr) {}
-    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+    ListNode *left;
+    ListNode *right;
+    ListNode() : val(0), left(nullptr), right(nullptr) {}
+    ListNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    ListNode(int x, ListNode *left, ListNode *right) : val(x), left(left), right(right) {}
 };
 
-int pathSum(TreeNode *root, int targetSum);
-int rootSum(TreeNode *root, int targetSum);
+int pathSum(ListNode *root, int targetSum);
+int rootSum(ListNode *root, int targetSum);
 
 void test();
 
@@ -33,7 +33,7 @@ void test()
 {
 }
 
-int rootSum(TreeNode *root, int targetSum)
+int rootSum(ListNode *root, int targetSum)
 {
     if (!root)
     {
@@ -51,7 +51,7 @@ int rootSum(TreeNode *root, int targetSum)
     return ret;
 }
 
-int pathSum(TreeNode *root, int targetSum)
+int pathSum(ListNode *root, int targetSum)
 {
     if (!root)
     {

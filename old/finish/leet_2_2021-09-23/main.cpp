@@ -6,16 +6,16 @@
 using namespace std;
 
 //Definition for singly-linked list.
-struct TreeNode
+struct ListNode
 {
     int val;
-    TreeNode *next;
-    TreeNode() : val(0), next(nullptr) {}
-    TreeNode(int x) : val(x), next(nullptr) {}
-    TreeNode(int x, TreeNode *next) : val(x), next(next) {}
+    ListNode *next;
+    ListNode() : val(0), next(nullptr) {}
+    ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-TreeNode *addTwoNumbers(TreeNode *l1, TreeNode *l2);
+ListNode *addTwoNumbers(ListNode *l1, ListNode *l2);
 void test();
 
 int main()
@@ -28,10 +28,10 @@ void test()
 {
 }
 
-TreeNode *addTwoNumbers(TreeNode *l1, TreeNode *l2)
+ListNode *addTwoNumbers(ListNode *l1, ListNode *l2)
 {
     int temp = 0, carry = 0;
-    TreeNode *n1 = l1, *n2 = l2, *head = l1;
+    ListNode *n1 = l1, *n2 = l2, *head = l1;
     while (l1 != NULL && l2 != NULL)
     {
         temp = carry + l1->val + l2->val;
