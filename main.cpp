@@ -9,6 +9,7 @@
 #include <limits.h>
 #include <string>
 #include <cmath>
+#include <unordered_set>
 
 using namespace std;
 
@@ -40,20 +41,25 @@ public:
      * 题解
      * @param
      */
-    ListNode* getKthFromEnd(ListNode* head, int k) {
-        int size=0;
-        ListNode* node=head;
-        while(node!=NULL){
-            node=node->next;
-            size++;
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB)
+    {
+        unordered_set<ListNode *> visited;
+        ListNode *temp = headA;
+        while (temp != nullptr)
+        {
+            visited.insert(temp);
+            temp = temp->next;
         }
-        node=head;
-        int n=1;
-        while(n!=size-k){
-            node=node->next;
-            n++;
+        temp = headB;
+        while (temp != nullptr)
+        {
+            if (visited.count(temp))
+            {
+                return temp;
+            }
+            temp = temp->next;
         }
-        return node;
+        return nullptr;
     }
 };
 
