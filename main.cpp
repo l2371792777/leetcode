@@ -9,7 +9,6 @@
 #include <limits.h>
 #include <string>
 #include <cmath>
-#include <unordered_set>
 
 using namespace std;
 
@@ -35,37 +34,55 @@ public:
      */
     void test()
     {
+        string test = "  hello world!  ";
+        test = reverseWords(test);
+        cout << endl
+             << test;
     }
 
     /**
      * 题解
      * @param
      */
-    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB)
+    string reverseWords(string s)
     {
-        unordered_set<ListNode *> visited;
-        ListNode *temp = headA;
-        while (temp != nullptr)
+        vector<string> ret;
+        string str = "";
+        for (int i = 0; i < s.size(); i++)
         {
-            visited.insert(temp);
-            temp = temp->next;
-        }
-        temp = headB;
-        while (temp != nullptr)
-        {
-            if (visited.count(temp))
+            if (s[i] == ' ')
             {
-                return temp;
+                if (str != "")
+                {
+                    ret.push_back(str);
+                    str = "";
+                }
+                continue;
             }
-            temp = temp->next;
+            str += s[i];
         }
-        return nullptr;
+        if (str[0] != ' ' && str != "")
+        {
+            ret.push_back(str);
+        }
+        if(ret.size()==0){
+            return "";
+        }
+        str = ret[ret.size() - 1];
+        for (int i = ret.size() - 2; i >= 0; i--)
+        {
+            cout << "\"" << ret[i] << "\""
+                 << " ";
+            str = str + " " + ret[i];
+        }
+
+        return str;
     }
 };
 
 int main()
 {
-    // Solution solu;
-    // solu.test();
+    Solution solu;
+    solu.test();
     return 0;
 }

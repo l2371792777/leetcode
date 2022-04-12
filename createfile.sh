@@ -2,7 +2,7 @@
 
 #处理url
 url='
-https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/
+https://leetcode-cn.com/problems/fan-zhuan-dan-ci-shun-xu-lcof/
 '
 title=${url#*//}
 title=${title#*/}
