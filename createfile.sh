@@ -2,7 +2,7 @@
 
 #处理url
 url='
-https://leetcode-cn.com/problems/fan-zhuan-dan-ci-shun-xu-lcof/
+https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/
 '
 title=${url#*//}
 title=${title#*/}
@@ -23,7 +23,8 @@ if [ $logline -gt 300 ]; then
 fi
 
 #markdown
-questionMes=$(python3 python/creat-leetcode-md.py $title $pre_dir)
+questionMes=$(python python/creat-leetcode-md.py $title $pre_dir)
 echo -e "***$(date)\n$questionMes\url:$url" >>logs/out.txt
 
+cp main.cpp main.cpp.back
 cp old/main.cpp main.cpp

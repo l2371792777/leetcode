@@ -34,55 +34,17 @@ public:
      */
     void test()
     {
-        string test = "  hello world!  ";
-        test = reverseWords(test);
-        cout << endl
-             << test;
     }
 
     /**
      * 题解
      * @param
      */
-    string reverseWords(string s)
-    {
-        vector<string> ret;
-        string str = "";
-        for (int i = 0; i < s.size(); i++)
-        {
-            if (s[i] == ' ')
-            {
-                if (str != "")
-                {
-                    ret.push_back(str);
-                    str = "";
-                }
-                continue;
-            }
-            str += s[i];
-        }
-        if (str[0] != ' ' && str != "")
-        {
-            ret.push_back(str);
-        }
-        if(ret.size()==0){
-            return "";
-        }
-        str = ret[ret.size() - 1];
-        for (int i = ret.size() - 2; i >= 0; i--)
-        {
-            cout << "\"" << ret[i] << "\""
-                 << " ";
-            str = str + " " + ret[i];
-        }
-
-        return str;
-    }
 };
 
 int main()
 {
-    Solution solu;
-    solu.test();
+    // Solution solu;
+    // solu.test();
     return 0;
 }
