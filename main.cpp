@@ -1,6 +1,7 @@
 /**
  * @description leetcode练习
  * @author lyc
+ * partition-to-k-equal-sum-subsets
  */
 
 #include <iostream>

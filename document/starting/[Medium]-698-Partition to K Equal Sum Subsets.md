@@ -34,11 +34,7 @@
 
 ### 题解:  
 * 思路  
-	1. 求和并除以k得到sum
-	2. 新建一个长度为sum的整数数组hit，遍历nums，给出现的数字计数
-	3. j=sum-1,i=sum-j,hit[i]不为0，return
-	4. 为0，sum=i,执行步骤3 
-	5. sum<=0,return false
+
 * 代码  
 ```c++
 

@@ -8,3 +8,33 @@ https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/description/
 \url:
 https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/
 
+***    Fri, Dec  1, 2023  2:18:06 PM
+questionId:698
+difficulty:Medium url:
+https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/
+
+***    Fri, Dec  1, 2023  2:19:20 PM
+questionId:698
+difficulty:Medium url:
+https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/
+
+***    Fri, Dec  1, 2023  2:20:13 PM
+questionId:698
+difficulty:Medium url:
+https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/
+
+***    Fri, Dec  1, 2023  2:25:00 PM
+questionId:698
+difficulty:Medium url:
+https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/
+
+***    Fri, Dec  1, 2023  2:25:26 PM
+questionId:698
+difficulty:Medium url:
+https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/
+
+***    Fri, Dec  1, 2023  2:26:00 PM
+questionId:698
+difficulty:Medium url:
+https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/
+

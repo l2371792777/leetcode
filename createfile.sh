@@ -11,6 +11,9 @@ title=${title%/*}
 
 readonly pre_dir="document/starting/"
 
+#markdown
+questionMes=$(python python/creat-leetcode-md.py $title $pre_dir)
+
 #logs
 logline=$(cat logs/out.txt | wc -l)
 #大于300行新建logs文件
@@ -22,9 +25,10 @@ if [ $logline -gt 300 ]; then
     cd -
 fi
 
-#markdown
-questionMes=$(python python/creat-leetcode-md.py $title $pre_dir)
-echo -e "***$(date)\n$questionMes\url:$url" >>logs/out.txt
 
+#备份
 cp main.cpp main.cpp.back
 cp old/main.cpp main.cpp
+sed -i '4i\'" * title:$title" main.cpp
+
+echo -e "***    $(date)\n$questionMes url:$url" >>logs/out.txt
