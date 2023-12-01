@@ -1,9 +1,7 @@
 #!/bin/zsh
 
 #处理url
-url='
-https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/
-'
+url='https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/'
 title=${url#*//}
 title=${title#*/}
 title=${title#*/}
